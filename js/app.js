@@ -44,15 +44,9 @@ Enemy.prototype.update = function(dt) {
       player.x = 200;
       player.y = 370;
 
-      //Place enemies in random positions
-      allEnemies.forEach(function(enemy){
-        enemy.x = Math.floor(Math.random() * Math.floor(enemy.maxX));
-        enemy.y = enemy.yValues[Math.floor(Math.random() * enemy.yValues.length)];
-      });
-      //alert("Hey");
-
-
-
+      //Reset Enemies
+      allEnemies.forEach(function(enemy){});
+      alert("Game Over, Restart");
 
       //Regress to level 1
       level = 1;
